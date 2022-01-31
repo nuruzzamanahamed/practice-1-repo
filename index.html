@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice-1-ripo</title>
+    <script src="https://kit.fontawesome.com/eb5fead41f.js" crossorigin="anonymous"></script>
+    <style>
+        .swimming div {
+            border: 3px dashed lightgrey;
+            width: 200px;
+            height: 150px;
+        }
+
+        #boy {
+            position: relative;
+            top: 110px;
+            z-index: 2;
+        }
+
+        #ring {
+            position: relative;
+            z-index: 1
+        }
+
+        #water {
+            position: relative;
+            top: -100px;
+        }
+
+        .dummy {
+            width: 200px;
+            height: 150px;
+            background-color: lightpink;
+            margin-bottom: 10px;
+        }
+
+        section.another {
+            display: inline-block;
+            display: flex;
+            margin-top: 50px;
+        }
+
+        table {
+            margin-left: 40px;
+            border-collapse: collapse;
+        }
+
+        tr,
+        th,
+        td {
+            border: 1px solid limegreen;
+            padding: 10px;
+            font-size: 20px;
+        }
+
+        caption {
+            font-size: 25px;
+            margin-bottom: 5px;
+            font-weight: 700;
+        }
+
+        .fab,
+        .fas {
+            font-size: 100px;
+            color: green;
+            margin-right: 20px;
+
+        }
+
+        .animation {
+            width: 200px;
+            height: 150px;
+            background-color: coral;
+            margin: 50px;
+            color: white;
+            text-align: center;
+            transition: width 2s, height 2s, transform 3s;
+        }
+
+        .nextech {
+            padding-top: 10px;
+        }
+
+        .field:hover .animation {
+            width: 300px;
+            height: 200px;
+            transform: translate(750px) rotate(360deg);
+        }
+
+        .field {
+            width: 1100px;
+            height: 350px;
+            border: 1px solid blue;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is my first practice-1-repo</h1>
+    <section>
+        <h3>This is inline element</h3>
+        <div class="inline-element">
+            <ol>
+                <li>a</li>
+                <li>b</li>
+                <li>big</li>
+                <li>br</li>
+                <li>code</li>
+                <li>em</li>
+                <li>i</li>
+                <li>input</li>
+                <li>output</li>
+                <li>q</li>
+                <li>script</li>
+                <li>small</li>
+                <li>select</li>
+                <li>sub</li>
+                <li>sup</li>
+                <li>span</li>
+            </ol>
+            <h1>Block lavel Element</h1>
+            <h3>address, article, aside, header, footer, table, tfoot, li, ul, ol, main, section, div, p, h1-h6 </h3>
+            <h1> Default inline-block element are</h1>
+            img, button, textarea, input, select.
+        </div>
+    </section>
+    <br>
+    <section class="swimming">
+        <div id="boy"><img src="images/boy.svg" alt=""></div>
+        <div id="ring"><img src="images/ring.svg" alt=""></div>
+        <div id="water"><img src="images/water.svg" alt=""></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+        <div class="dummy"></div>
+    </section>
+    <h1>This is another section</h1>
+    <section class="another">
+        <div>
+            <div class="dummy"></div>
+            <div class="dummy"></div>
+        </div>
+
+        <div class="table">
+            <table>
+                <caption> This is my friends info</caption>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Village</th>
+                        <th>Birth Date</th>
+                        <th>Resturent</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Rahim</td>
+                        <td>Mohadevpur</td>
+                        <td>12-3-1977</td>
+                        <td>Modhur hotel</td>
+                    </tr>
+                    <tr>
+                        <td>Karim</td>
+                        <td>Naogaon</td>
+                        <td>07-11-1976</td>
+                        <td>Sabbir hotel</td>
+                    </tr>
+                    <tr>
+                        <td>Ratan</td>
+                        <td>Joypurhat</td>
+                        <td>15-12-1978</td>
+                        <td>Dubai hotel</td>
+                    </tr>
+                    <tr>
+                        <td>Milon</td>
+                        <td>Dinajpur</td>
+                        <td>6-12-1996</td>
+                        <td>Food korner</td>
+                    </tr>
+                    <tr>
+                        <td>Mahfuj</td>
+                        <td>Rangpur</td>
+                        <td>4-6-1978</td>
+                        <td>Biriani House</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section class="seman-video">
+        <h1 class="semantic">semantic-tag</h1>
+        header, footer, nav, section, article, aside,main, mark, time.
+        <h1>semantic-meaning</h1>
+        <p> Semantic tags give us clear concept about a webpage or web content. In this reason we use semantic tags. But
+            some days ago we used some non semantic tags like div, but a div tag cannot give a clear content meaning</p>
+        <div class="video">
+            <h1>youtube-video</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/4zWxcmtGqhc?autoplay=1"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+        <br>
+        <i class="fab fa-amazon-pay"></i>
+        <i class="fas fa-ambulance"></i>
+    </section>
+    <section class="field">
+        <div class="animation">
+            <h1 class="nextech">Nextech</h1>
+        </div>
+    </section>
+
+</body>
+
+</html>
